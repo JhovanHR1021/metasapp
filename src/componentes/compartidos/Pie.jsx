@@ -1,7 +1,8 @@
+import './Pie.css'
 function Pie() {
 
     return (
-        <footer className="text-blue-400">
+        <footer className="pie">
             <small>Desarollado por Jhovan - 2024</small>
         </footer>
     )
