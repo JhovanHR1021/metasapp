@@ -1,0 +1,3 @@
+.tarjeta {
+    @apply rounded-xl m-2 text-gray-700 text-xs m-4 nm-flat-white;
+}

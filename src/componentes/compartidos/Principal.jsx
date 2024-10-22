@@ -21,7 +21,7 @@ function Principal({children}) {
             alt='Vínculo que contiene una imagen de más' 
           />
         </aside>
-        <main className='main'> {children} </main>
+        <main className={estilos.main}> {children} </main>
       </div>
     )
   }

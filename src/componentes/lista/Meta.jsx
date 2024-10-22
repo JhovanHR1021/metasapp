@@ -1,12 +1,13 @@
+import estilos from './Meta.module.css';
 function Meta() {
     return (
-        <div>
-            <div>
-                <div>icono</div>
-                <p>1 <sub>/ semana</sub> </p>
+        <div className={estilos.meta + 'tarjeta'}>
+            <div className='flex'>
+                <div className={estilos.icono}>icono</div>
+                <p className={estilos.frecuencia}>1 <sub>/ semana</sub> </p>
                 <p>detalles</p>
             </div>
-            <div>
+            <div className='flex'>
                 <div>
                     <p>4/5</p>
                     <div>
