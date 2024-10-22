@@ -1,18 +1,21 @@
-import './Encabezado.css';
+import estilos from './Encabezado.module.css';
 import logo from './../../img/logo.svg';
 import perfil from './../../img/perfil.svg';
+import Vinculo from './Vinculos';
 function Encabezado() {
 
     return (
-      <header className="encabezado">
-        <div className="contenedor">
-          <img src={logo} alt="Logo de Metas App" className="logo-metas" />
-          <a href="/" className='titulo'>Metas App</a>
+      <header className={estilos.encabezado}>
+        <div className={estilos.contenedor}>
+          <img src={logo} alt="Logo de Metas App" className={estilos.logosvg} />
+          <a href="/" className={estilos.titulo}>Metas App</a>
         </div>
         <nav>
-            <a href="/perfil" className="vinculo">
-              <img src={perfil} alt="Icono de perfil" className="icono" />
-            </a>
+          <Vinculo 
+            href="/perfil" 
+            Icono={perfil} 
+            alt='Icono de perfil' 
+          />
         </nav>
       </header>
     )

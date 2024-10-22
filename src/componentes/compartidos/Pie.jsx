@@ -1,8 +1,8 @@
-import './Pie.css'
+import estilos from './Pie.module.css'
 function Pie() {
 
     return (
-        <footer className="pie">
+        <footer className={estilos.pie}>
             <small>Desarollado por Jhovan - 2024</small>
         </footer>
     )

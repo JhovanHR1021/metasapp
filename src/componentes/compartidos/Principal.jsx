@@ -1,19 +1,25 @@
 /* eslint-disable react/prop-types */
-import './Principal.css';
+import estilos from './Principal.module.css';
 import Vinculo from './Vinculos';
 import lista from './../../img/lista.svg';
 import nuevo from './../../img/nueva.svg';
 function Principal({children}) {
 
     return (
-      <div className="principal">
-        <aside className='aside'>
-          <Vinculo href="/lista" texto="Lista de Metas">
-            <img src={lista} alt="Icono de lista" className='icono' />
-          </Vinculo>
-          <Vinculo href="/crear" texto="Nueva Meta">
-            <img src={nuevo} alt="Icono de nuevo" className='icono' />
-          </Vinculo>
+      <div className={estilos.principal}>
+        <aside className={estilos.aside}>
+          <Vinculo 
+            href="/lista" 
+            texto="Lista de Metas" 
+            Icono={lista} 
+            alt='Vínculo que contiene una imagen de una lista' 
+          />
+          <Vinculo 
+            href="/crear" 
+            texto="Nueva Meta" 
+            Icono={nuevo} 
+            alt='Vínculo que contiene una imagen de más' 
+          />
         </aside>
         <main className='main'> {children} </main>
       </div>
