@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css'
 import Encabezado from './componentes/compartidos/Encabezado'
 import Pie from './componentes/compartidos/Pie'
