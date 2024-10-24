@@ -19,7 +19,7 @@
   }
   
   .label {
-    @apply block uppercase text-xs font-bold mb-6;
+    @apply block uppercase text-xs font-bold mb-6 text-gray-800;
   }
   
   .input {
